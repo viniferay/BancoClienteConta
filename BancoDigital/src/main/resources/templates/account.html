@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+<nav>
+    <ul class="list">
+<li> <a href="/newAccount">Criar contas</a></li>
+<li><a href=" "> | </a></li>
+<li><a href="/home">Menu</a></li>
+    </ul>
+</nav>
+    </div>
+
+    <div class="contas" th:each="conta : ${contas}">
+        <p th:text="'numero conta: '+${conta.nConta}"></p>
+        <p th:text="'nome: '+${conta.cliente.nome}"></p>
+
+</div>
+</body>
+</html>

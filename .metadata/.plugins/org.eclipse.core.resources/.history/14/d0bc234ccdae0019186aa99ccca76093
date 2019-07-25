@@ -1,0 +1,8 @@
+package com.br.bancoDigital.models;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Conta {
+
+}
